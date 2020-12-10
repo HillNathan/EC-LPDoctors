@@ -4,7 +4,8 @@ body {
 
 
 /* // doctor dashboard */
-body {
+.primary {
+position: relative;
 background: white;
 margin: 0;
 font-family: 'Raleway';
@@ -13,7 +14,8 @@ padding-left: 240px;
 }
 
 main {
-position: relative;
+  position: relative;
+
 }
 main .helper {
 background: #0c6d14; 
@@ -82,44 +84,44 @@ transition: all 0.15s linear;
 cursor: pointer;
 }
 .menu ul li.icon-dashboard {
-background-image: url("assets/images/dashboard.png");
+background-image: url("../images/dashboard.png");
 }
 .menu ul li.icon-billing {
-  background-image: url("assets/images/billing.png");
+  background-image: url("../images/billing.png");
 }
 .menu ul li.icon-users {
-  background-image: url("assets/images/patients.png");
+  background-image: url("../images/patients.png");
 }
 .menu ul li.icon-settings {
-  background-image: url("assets/images/settings.png");
+  background-image: url("../images/settings.png");
 }
 
 .menu ul li.icon-ads {
-background-image: url("assets/images/click.png");
+background-image: url("../images/click.png");
 }
 
 .menu ul li.icon-docs {
-background-image: url("assets/images/file.png");
+background-image: url("../images/file.png");
 }
 
 .menu ul li.icon-subscribers {
-background-image: url("assets/images/subscribe.png");
+background-image: url("../images/subscribe.png");
 }
 
 .menu ul li.icon-dispensary {
-  background-image: url("assets/images/dispensary.png");
+  background-image: url("../images/dispensary.png");
 }
 
 .menu ul li.icon-stats {
-  background-image: url("assets/images/stats.png");
+  background-image: url("../images/stats.png");
 }
   
 .menu ul li.icon-conditions {
-  background-image: url("assets/images/conditions.png");
+  background-image: url("../images/conditions.png");
 }
 
 .menu ul li.icon-states {
-  background-image: url("assets/images/states.png");
+  background-image: url("../images/states.png");
 }
 
 .menu ul li:hover {

@@ -4,6 +4,7 @@ import {
   Route,
   Switch
 } from "react-router-dom";
+// importing patient pages
 import About from './pages/About'
 import Splash from './pages/Splash'
 import Patient from './pages/Patient'
@@ -12,6 +13,15 @@ import Advertisement from './pages/Advertisement'
 import FactsStats from './pages/FactsStats'
 import Contact from './pages/Contact'
 import LegalStates from './pages/LegalStates'
+
+// importing doctor pages
+import Doctor from './pages/Doctor'
+import DoctorLP from './pages/DoctorLP'
+import SignUp from './pages/SignUp'
+
+// importing Adming page(s)
+// import Admin from './pages/Admin'
+
 import './App.css';
 
 class App extends Component {
@@ -43,39 +53,49 @@ state = {
           <Route exact path="/">
             <Splash />
           </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/admin">
 
-          </Route>
-          <Route exact path="/advertisement">
-            <Advertisement />
-          </Route>
-          <Route exact path="/conditions">
-            <Conditions />
-          </Route>
-          <Route exact path="/contact">
-            <Contact />
-          </Route>
-          <Route exact path="/doctorLP">
+          {/* Patient Pages in this section */}
+              <Route exact path="/about">
+                <About />
+              </Route>
+              <Route exact path="/advertisement">
+                <Advertisement />
+              </Route>
+              <Route exact path="/conditions">
+                <Conditions />
+              </Route>
+              <Route exact path="/contact">
+                <Contact />
+              </Route>
+              <Route exact path="/stats-facts">
+                <FactsStats />
+              </Route>
+              <Route exact path="/legal-states">
+                <LegalStates />
+              </Route>
+              <Route exact path="/patient">
+                <Patient />
+              </Route>
+          
+          {/* Doctor Pages in this section */}
+              <Route exact path="/doctor">
+                <Doctor />
+              </Route>
+              <Route exact path="/sign-up">
+                <SignUp />
+              </Route>
+              <Route exact path="/doctorLP">
+                <DoctorLP />
+              </Route>
+              <Route exact path="/pricing">
 
-          </Route>
-          <Route exact path="/stats-facts">
-            <FactsStats />
-          </Route>
-          <Route exact path="/legal-states">
-            <LegalStates />
-          </Route>
-          <Route exact path="/patient">
-            <Patient />
-          </Route>
-          <Route exact path="/pricing">
+              </Route>
 
-          </Route>
-          <Route exact path="/sign-up">
+          {/* Admin route(s) in this section */}
+              <Route exact path="/admin">
 
-          </Route>
+              </Route>
+
       </Switch>
     </Router>
     )}

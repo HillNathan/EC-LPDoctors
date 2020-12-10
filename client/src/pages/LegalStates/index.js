@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 import "../../css-stylesheets/style.css"
 import "../../css-stylesheets/legalstates.css"
 
-import legalStateList from "../../data/legalStates.json"
+// import legalStateList from "../../data/legalStates.json"
 
 AOS.init();
 

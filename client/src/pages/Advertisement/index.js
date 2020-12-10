@@ -105,7 +105,7 @@ function Advertisement () {
       <figcaption>
       <h2>CBD FOR PETS</h2>
       <p>Learn more</p>
-      <a href="#">View more</a>
+      <a href="/advertisement">View more</a>
       </figcaption>
       </figure>
       </div>
@@ -117,7 +117,7 @@ function Advertisement () {
       <figcaption>
       <h2>DOCTOR JOHN DOE</h2>
       {/* <!-- <p>Rates are dropping</p> --> */}
-      <a href="#">SCHEDULE TODAY</a>
+      <a href="/advertisement">SCHEDULE TODAY</a>
       </figcaption>
       </figure>
       </div>
@@ -129,7 +129,7 @@ function Advertisement () {
       <figcaption>
       <h2>BENEFITS OF CBD OIL</h2>
       <p>LEARN MORE</p>
-      <a href="#">View more</a>
+      <a href="/advertisement">View more</a>
       </figcaption>
       </figure>
       </div>
@@ -148,7 +148,7 @@ function Advertisement () {
       <figcaption>
       <h2>DECREASE JOINT PAIN</h2>
       <p>LEARN MORE</p>
-      <a href="#">View more</a>
+      <a href="/advertisement">View more</a>
       </figcaption>
       </figure>
       </div>
@@ -160,7 +160,7 @@ function Advertisement () {
       <figcaption>
       <h2>BEST DISPENSARIES</h2>
       <p>LEARN MORE</p>
-      <a href="#">View more</a>
+      <a href="/advertisement">View more</a>
       </figcaption>
       </figure>
       </div>
@@ -172,7 +172,7 @@ function Advertisement () {
       <figcaption>
       <h2>MARIJUANA IN THE WORLD</h2>
       {/* <!-- <p>Become a part of our team</p> --> */}
-      <a href="#">View more</a>
+      <a href="/advertisement">View more</a>
       </figcaption>
       </figure>
       </div>

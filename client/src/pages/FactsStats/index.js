@@ -105,7 +105,7 @@ function FactsStats () {
                 <div class="col">
                 <div class="counter">
                     <i class="fas fa-cannabis fa-2x"></i>
-                    <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+                    <div class="timer count-title count-number" data-to="100" data-speed="1500"></div>
                     <p class="count-text ">EXAMPLE</p>
                 </div>
                 </div>
@@ -113,7 +113,7 @@ function FactsStats () {
                 <div class="col">
                 <div class="counter">
                     <i class="fas fa-joint fa-2x"></i>
-                    <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+                    <div class="timer count-title count-number" data-to="1700" data-speed="1500"></div>
                     <p class="count-text ">EXAMPLE</p>
                 </div>
                 </div>
@@ -121,7 +121,7 @@ function FactsStats () {
                 <div class="col">
                 <div class="counter">
                     <i class="fas fa-diagnoses fa-2x"></i>
-                    <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+                    <div class="timer count-title count-number" data-to="11900" data-speed="1500"></div>
                     <p class="count-text ">EXAMPLE</p>
                 </div>
                 </div>
@@ -142,11 +142,11 @@ function FactsStats () {
             </div><br/><br/>
             
             <div>
-                <div class="terpenes-boxes-1"><img src="assets/images/flower.png" id="flower"/><div id="terp-types">Myrcene<br/><i>Herbal</i></div></div>
-                <div class="terpenes-boxes-2"><img src="assets/images/pine.png" id="pine"/><div id="terp-types">Pinene<br/><i>Pine</i></div></div>
-                <div class="terpenes-boxes-3"><img src="assets/images/spice.png" id="spice"/><div id="terp-types">Caryophyllene<br/><i>Peppery</i></div></div>
-                <div class="terpenes-boxes-4"><img src="assets/images/lemon.png" id="lemon"/><div id="terp-types">Limonene<br/><i>Citrus</i></div></div>
-                <div class="terpenes-boxes-5"><img src="assets/images/fruit.png" id="fruit"/><div id="terp-types">Terpinolene<br/><i>Fruity</i></div></div>
+                <div class="terpenes-boxes-1"><img src="assets/images/flower.png" alt="flower" id="flower"/><div id="terp-types">Myrcene<br/><i>Herbal</i></div></div>
+                <div class="terpenes-boxes-2"><img src="assets/images/pine.png" alt="pine" id="pine"/><div id="terp-types">Pinene<br/><i>Pine</i></div></div>
+                <div class="terpenes-boxes-3"><img src="assets/images/spice.png" alt="spice" id="spice"/><div id="terp-types">Caryophyllene<br/><i>Peppery</i></div></div>
+                <div class="terpenes-boxes-4"><img src="assets/images/lemon.png" alt="lemon" id="lemon"/><div id="terp-types">Limonene<br/><i>Citrus</i></div></div>
+                <div class="terpenes-boxes-5"><img src="assets/images/fruit.png" alt="fruit" id="fruit"/><div id="terp-types">Terpinolene<br/><i>Fruity</i></div></div>
             </div>
             {/*  end of terpenes chart */}
 

@@ -1,0 +1,200 @@
+/* body {
+  background-image: none; 
+} */
+
+/* // patient nav bar  */
+.patient-nav-bar{
+  background-color: #e4e4e4; 
+  color: white; 
+  position: relative; 
+  text-align: center; 
+  top: 7px;
+  margin-bottom: 7px; 
+  padding-top: 15px; 
+  padding-bottom: 15px; 
+}
+.patient-nav-bar a{
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400; 
+  font-family: 'Raleway';
+  margin-left: 55px;
+  letter-spacing: 3px; 
+  color:  #007bff; 
+}
+.patient-nav-bar a:hover{
+  color: rgb(5, 134, 5);
+  text-decoration: none; 
+  cursor: pointer; 
+}
+
+.cannabinoid-learn-more, .terpenes-learn-more, .cann-terp-diff-learn-more{
+  font-size: 14px; 
+  color: #007bff; 
+}
+
+.cannabinoid-learn-more:hover, .terpenes-learn-more:hover, .cann-terp-diff-learn-more:hover {
+  cursor: pointer; 
+  color: #034c9b; 
+}
+
+@media only screen and (max-width: 730px) {
+  .patient-nav-bar a {
+    font-size: 10px;
+    margin-left: 12px; 
+    letter-spacing: 1px; 
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .patient-nav-bar a {
+    font-size: 8px;
+    margin-left: 10px; 
+    letter-spacing: 1px; 
+  }
+}
+/* // end of patient nav bar  */
+
+/* // first patient banner  */
+section {
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: none;
+    background-color: rgb(241, 241, 241); 
+    height: 20vh;
+    opacity: 0.8;
+  }
+  
+  .intro {
+    height: 50vh;
+  }
+  
+  .content {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .intro h1 {
+    font-size: 3.4em;
+    font-family: 'Raleway';
+    display: block;
+    color: black;
+    font-weight: 300;
+  }
+  
+  p {
+    font-size: 1.4em;
+    font-family: 'Raleway'; 
+    color: #0e9119;
+  }
+
+  span1 {
+    color: #007bff; 
+    letter-spacing: 7px;
+  }
+
+  @media only screen and (max-width: 430px) {
+  .intro h1 {
+    font-size: 2.9em;
+  }
+
+  .intro p {
+    font-size: 1.2em; 
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .intro h1 {
+    font-size: 3em;
+  }
+
+  .intro p {
+    font-size: 1.2em; 
+  }
+}
+/* // end of first patient banner */
+
+/* <!-- // collapsible section  --> */
+#accordion {
+  margin-top: 30px; 
+  font-family: 'Raleway';
+  margin-bottom: 30px; 
+}
+.panel-group .panel {
+  margin: auto; 
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #EEEEEE;
+  width: 750px; 
+}
+
+.panel-default > .panel-heading {
+  padding: 0;
+  border-radius: 0;
+  color: white;
+  background-color: #0c6d14;
+  opacity: 0.8; 
+  border-color: #EEEEEE;
+}
+
+.panel-title {
+  font-size: 17px;
+}
+
+.panel-title > a {
+  display: block;
+  padding: 15px;
+  color: white; 
+  text-decoration: none;
+}
+
+.more-less {
+  float: right;
+  color: #212121;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #EEEEEE;
+  padding: 10px; 
+}
+
+.panel-body {
+  background-color: white;
+  opacity: 0.8; 
+}
+
+.fa-plus {
+  float: right; 
+}
+
+@media only screen and (max-width: 760px) {
+  .panel-group .panel, .panel-title {
+      width: 430px; 
+      font-size: 15px; 
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .panel-group .panel, .panel-title {
+      width: 375px; 
+      font-size: 15px; 
+  }
+}
+/* <!-- // end of collapsible section  --> */
+
+/* // See FAQS & Statistics link button */
+.seeFAQS {
+  font-size: 20px; 
+  text-align: center; 
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  color: rgb(24, 24, 24);
+}
+
+.seeFAQS:hover {
+  cursor: pointer; 
+  color: #007bff; 
+}
+/* // End of see FAQS & Statistics link button */

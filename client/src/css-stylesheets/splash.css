@@ -1,0 +1,22 @@
+.scan-icon {
+    position: relative;
+    margin-top: -115px;
+  }
+
+.scan-icon .monitor {
+position: absolute;
+overflow: hidden;
+width: 10em;
+height: 10em;
+border-radius: 10px;
+z-index: 999;
+}
+
+.scan-icon .scan-box {
+    position: absolute;
+    width: 480px;
+    height: 200px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white 0%, white 10%, rgba(255, 255, 255, 0));
+    z-index: 99;
+    animation: slideAcross 2s infinite;
+  }

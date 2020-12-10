@@ -1,0 +1,241 @@
+
+body {
+  font-family: 'Raleway';
+  background-image: url("../images/background8.jpg");
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+/* // logo heartbeat movement  */
+#QuickMMJ {
+  margin-left: 178px;
+  font-size: 40px;
+  margin-top: 75px;
+  letter-spacing: 4px;
+}
+#OneStop {
+  float: right; 
+  margin-top: -41px;
+  margin-right: 80px; 
+  font-size: 19px; 
+}
+#cannibis {
+  margin-top: -15px;
+  padding-left: 5px; 
+}
+.scan-icon {
+  position: relative;
+  margin-top: -115px;
+}
+.scan-icon .monitor {
+  position: absolute;
+  overflow: hidden;
+  width: 10em;
+  height: 10em;
+  border-radius: 10px;
+  z-index: 999;
+}
+.scan-icon .scan-box {
+  position: absolute;
+  width: 480px;
+  height: 200px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white 0%, white 10%, rgba(255, 255, 255, 0));
+  z-index: 99;
+  animation: slideAcross 2s infinite;
+}
+.scan-icon .heartbeat {
+  position: absolute;
+  top: -95px;
+  left: -15px;
+  z-index: 9;
+}
+.scan-icon .heartbeat svg {
+  width: 11em;
+}
+
+@keyframes slideAcross {
+  0% {
+    left: -850px;
+  }
+  100% {
+    left: 190px;
+  }
+}
+/* // end of logo heartbeat movement */
+
+/* <!-- // Patient-Doctor Portal Entry LP --> */
+.container {
+  margin-top: 20px; 
+  display: flex;
+  height: 62vh;
+  width: 100vw;
+}
+
+.split-section {
+  height: 100%;
+  color: white; 
+  width: 100%;
+  position: relative;
+  transition: all 1s;
+  opacity: none; 
+}
+
+#split-1 {
+  background-color: #0c6d14; 
+  opacity: 0.69; 
+}
+
+#split-2 {
+  background-color: #1a1919;
+  opacity: 0.69; 
+}
+
+.split-heading {
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  opacity: none; 
+}
+
+.split-heading-main {
+  display: block;
+  opacity: none; 
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 7px;
+  opacity: none; 
+}
+
+.split-heading-sub {
+  font-family: 'Raleway';
+  font-weight: 200;
+  font-size: 40px;
+  letter-spacing: 9px;
+  opacity: none; 
+}
+
+.split-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 75%;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 7px 20px;
+  transition: all .5s;
+  position: relative;
+}
+
+.btn:hover {
+  padding: 7px 40px;
+}
+
+.btn-outline-white {
+  border: 3px white solid;
+}
+
+.split-section:hover {
+  width: 130%;
+  z-index: 1;
+}
+.btn-outline-white:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.fa-comment-medical, .fa-user-md {
+  color: #007BFF; 
+}
+
+#doctor-login, #doctor-signup {
+  margin-right: 5px;  
+}
+/* <!-- // End of Patient-Doctor Portal Entry LP --> */
+
+/* <!-- // Patient-Doctor Portal Entry LP Media Settings --> */
+@media only screen and (max-width: 430px) {
+  .split-heading-sub {
+    font-size: 18px;
+    letter-spacing: 4px;
+    }
+
+  .btn {
+    font-size: 12px;
+  }
+  #QuickMMJ {
+    font-size: 27px;
+    margin-top: 69px; 
+  }
+  }
+
+@media only screen and (max-width: 1100px) {
+.split-heading-sub {
+  font-size: 30px;
+  }
+
+  #doctor-login, #patient-seemore, #doctor-signup {
+    font-size: 12px; 
+    border: none; 
+    margin-bottom: -70px; 
+  }
+  .split-section:hover {
+    width: 125%; 
+  }
+}
+ 
+@media only screen and (max-width: 760px) {
+  #doc-main {
+    margin-top: 22px;
+  }
+  #doc-main2 {
+    margin-top: -5px;
+  }
+  #doctor-login, #patient-seemore, #doctor-signup {
+    font-size: 10px; 
+  }
+  .split-section:hover {
+    width: 100%; 
+  }
+  /* body {
+    background-image: none; 
+  } */
+  #split-1, #split-2 {
+    opacity: 0.73; 
+  }
+}
+@media only screen and (max-width: 1000px) {
+#OneStop {
+  margin-top: -2px;
+  margin-left: 180px; 
+  font-size: 16px; 
+  }
+} 
+
+@media only screen and (max-width: 500px) {
+  #OneStop {
+    margin-top: -2px;
+    margin-left: 180px; 
+    font-size: 15px; 
+    line-height: -10px; 
+    }
+    #cannibis {
+      margin-top: -3px;
+    }
+  }
+  @media only screen and (max-width: 430px) {
+    #OneStop {
+      margin-top: -2px;
+      margin-left: 180px; 
+      font-size: 10.5px; 
+      line-height: -10px; 
+      }
+    }
+/* <!-- // End of Patient-Doctor Portal Entry LP Media Settings --> */

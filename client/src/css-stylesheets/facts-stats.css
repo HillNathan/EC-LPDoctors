@@ -1,0 +1,458 @@
+
+body {
+  background-image: none; 
+} 
+
+/* // bar graph animation  */
+@-webkit-keyframes animate-width {
+    0% {
+      width: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @-moz-keyframes animate-width {
+    0% {
+      width: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @keyframes animate-width {
+    0% {
+      width: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @-webkit-keyframes animate-height {
+    0% {
+      height: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @-moz-keyframes animate-height {
+    0% {
+      height: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @keyframes animate-height {
+    0% {
+      height: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  
+  #bar-chart {
+    height: 380px;
+    width: 70%;
+    position: relative;
+    margin: 50px auto 0;
+  }
+  #bar-chart * {
+    box-sizing: border-box;
+  }
+  #bar-chart .graph {
+    height: 283px;
+    position: relative;
+  }
+  #bar-chart .bars {
+    height: 253px;
+    padding: 0 2%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+  #bar-chart .bar-group {
+    display: block;
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 12%;
+    margin-right: 10%;
+  }
+  #bar-chart .bar-group:last-child {
+    margin-right: 0;
+  }
+  #bar-chart .bar-group .bar {
+    visibility: hidden;
+    height: 0;
+    -webkit-animation: animate-height;
+    -moz-animation: animate-height;
+    animation: animate-height;
+    animation-timing-function: cubic-bezier(0.35, 0.95, 0.67, 0.99);
+    -webkit-animation-timing-function: cubic-bezier(0.35, 0.95, 0.67, 0.99);
+    -moz-animation-timing-function: cubic-bezier(0.35, 0.95, 0.67, 0.99);
+    animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.15); 
+    border-radius: 3px 3px 0 0;
+    bottom: 0;
+    cursor: pointer;
+    height: 0;
+    position: absolute;
+    text-align: center;
+    width: 50%;
+  }
+  #bar-chart .bar-group .bar:nth-child(2) {
+    left: 50%;
+  }
+  #bar-chart .bar-group .bar:nth-child(3) {
+    right: 70%;
+  }
+  #bar-chart .bar-group .bar span {
+    display: none;
+  }
+  #bar-chart .bar-group .bar-1 {
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+  }
+  #bar-chart .bar-group .bar-2 {
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+  }
+  #bar-chart .bar-group .bar-3 {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+  }
+  #bar-chart .bar-group .bar-4 {
+    animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+  }
+  #bar-chart .bar-group .bar-5 {
+    animation-delay: 0.7s;
+    -webkit-animation-delay: 0.7s;
+  }
+  #bar-chart .bar-group .bar-6 {
+    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+  }
+  #bar-chart .bar-group .bar-7 {
+    animation-delay: 0.9s;
+    -webkit-animation-delay: 0.9s;
+  }
+  #bar-chart .bar-group .bar-8 {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+  }
+  #bar-chart .bar-group .bar-9 {
+    animation-delay: 1.1s;
+    -webkit-animation-delay: 1.1s;
+  }
+  #bar-chart .bar-group .bar-10 {
+    animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+  }
+  #bar-chart .bar-group .bar-11 {
+    animation-delay: 1.3s;
+    -webkit-animation-delay: 1.3s;
+  }
+  #bar-chart .bar-group .bar-12 {
+    animation-delay: 1.4s;
+    -webkit-animation-delay: 1.4s;
+  }
+  #bar-chart .bar-group .bar-13 {
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+  }
+  #bar-chart .bar-group .bar-14 {
+    animation-delay: 1.6s;
+    -webkit-animation-delay: 1.6s;
+  }
+  #bar-chart .bar-group .bar-15 {
+    animation-delay: 1.7s;
+    -webkit-animation-delay: 1.7s;
+  }
+  #bar-chart ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #bar-chart .x-axis {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  #bar-chart .x-axis li {
+    float: left;
+    margin-right: 10.5%;
+    font-size: 14px;
+    width: 11.5%;
+  }
+  #bar-chart .x-axis li:last-child {
+    margin-right: 0;
+  }
+  #bar-chart .y-axis {
+    position: absolute;
+    text-align: right;
+    width: 100%;
+  }
+  #bar-chart .y-axis li {
+    border-top: 1px solid #4e5464;
+    display: block;
+    height: 63.25px;
+    width: 100%;
+  }
+  #bar-chart .y-axis li span {
+    display: block;
+    font-size: 14px;
+    margin: -10px 0 0 -60px;
+    padding: 0 10px;
+    width: 40px;
+  }
+  #bar-chart .stat-1 {
+    background-color: #0c6d14;
+    opacity: 0.8; 
+  }
+  #bar-chart .stat-2 {
+    background-color: #39b944; 
+    opacity: 0.8; 
+  }
+  #stats {
+    text-align: center; 
+    font-size: 27px; 
+    letter-spacing: 2px; 
+    font-weight: 300; 
+   }
+  
+   #bar1-title {
+     font-size: 16.5px; 
+     text-align: center; 
+     margin-top: 20px; 
+   }
+  
+  
+  .fa-circle {
+    margin-top: 19em; 
+    margin-left: -300px; 
+    padding-right: 10px; 
+  }
+  
+  #circle-minimum {
+    color: #0c6d14;
+    opacity: 0.8; 
+  }
+  
+  #circle-maximum {
+    color: #39b944; 
+    opacity: 0.8; 
+  }
+  
+  span {
+    color: black; 
+    font-family: 'Raleway';
+  }
+
+  #bar1-sub {
+    text-align: center; 
+    font-size: 11px; 
+  }
+  .fa-copyright {
+    font-size: 9px; 
+    color: gray; 
+  }
+  /* //  end of bar graph animation  */
+
+  /* // mobile bar graph animation  */
+  @media only screen and (max-width: 430px) {
+    .fa-circle {
+      margin-right: -60px;
+    }
+    #bar-num {
+      font-size: 11px; 
+    }
+    span {
+      font-size: 11px; 
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    #bar1-title {
+      font-size: 13px; 
+      text-align: center;
+    }
+    #stats {
+      margin-top: 10px; 
+    }
+    .fa-circle {
+      margin-left: -215px; 
+    }
+    #bar-num {
+      font-size: 14px; 
+    }
+  }
+  /* end of mobile bar graph animation  */
+
+  /* /* // numbers count section  */
+.counter {
+  margin-top: -25px; 
+  padding: 10px 0;
+  border-radius: 5px;
+  font-family: 'Raleway'; 
+}
+
+.count-title {
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 34px; 
+}
+
+.count-text {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.fa-2x {
+  margin: 0 auto;
+  font-size: 20px; 
+  float: none;
+  display: table;
+  color: #007BFF; 
+}
+/* // numbers count section */
+
+/* // numbers count mobile  */
+@media only screen and (max-width: 430px) {
+  .count-text {
+      font-size: 16px;
+  }
+  .count-title {
+      font-size: 28px; 
+  }
+}
+/* // end of numbers count section mobile //  */
+
+/* // terpenes chart */
+main {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(auto-fit, 200px);
+}
+
+.terpenes-boxes-1 {
+  background-color: rgb(1, 28, 102);
+  height: 200px;
+  width: 100%;
+}
+
+.terpenes-boxes-2 {
+  background-color: #0c6d14;
+  height: 200px;
+  width: 100%;
+}
+
+#pine {
+  margin-top: 35px; 
+  padding-bottom: 15px; 
+  margin-left: 62px;  
+}
+
+.terpenes-boxes-3 {
+  background-color: rgb(49, 49, 49); 
+  height: 200px;
+  width: 100%;
+}
+
+.terpenes-boxes-4 {
+  background-color: #007BFF; 
+  height: 200px;
+  width: 100%;
+}
+
+.terpenes-boxes-5 {
+  background-color: #39b944; 
+  height: 200px;
+  width: 100%;
+}
+
+#lemon {
+  margin-top: 35px; 
+  padding-bottom: 15px; 
+  margin-left: 62px;  
+}
+
+#spice {
+  margin-top: 35px; 
+  padding-bottom: 15px; 
+  margin-left: 62px;    
+}
+
+#terp-types {
+  color: white; 
+  text-align: center; 
+}
+
+#flower {
+  margin-top: 35px; 
+  padding-bottom: 15px; 
+  margin-left: 62px;  
+}
+
+#fruit {
+  margin-top: 35px; 
+  padding-bottom: 15px; 
+  margin-left: 62px;  
+}
+
+.terpenes-calm-energy {
+  font-family: 'Raleway';
+  font-weight: 300; 
+  padding-bottom: 20px; 
+}
+
+#terpenes-calm {
+  float: left; 
+  margin-left: 220px; 
+  font-size:  30px;  
+}
+
+#terpenes-energy {
+  float: right; 
+  margin-right: 220px; 
+  font-size:  30px;  
+}
+
+@media only screen and (max-width: 1000px) {
+  #terpenes-calm {
+    margin-left: 100px; 
+    font-size:  20px;  
+  }
+  
+  #terpenes-energy {
+    margin-right: 100px; 
+    font-size:  20px;  
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  #terpenes-calm {
+    margin-left: 70px; 
+    font-size:  18px;  
+  }
+  
+  #terpenes-energy {
+    margin-right: 70px; 
+    font-size:  18px;  
+  }
+}
+/* // end of terpenes chart */
+
+/* // facts section  */

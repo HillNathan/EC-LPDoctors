@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const MONGODB_URI = "mongodb://localhost/mj_doctor_db";
 
 // define our port both here and in production
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8008;
 
 // connect to MongoDB
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, (err) => {

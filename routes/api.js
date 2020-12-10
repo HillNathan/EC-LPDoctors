@@ -12,6 +12,13 @@ const middleware = require("../middleware")
 const API = require("../controller")
 
 module.exports = app => {
+    // create a GET route
+    app.get('/express_backend', (req, res) => {
+        res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
+    });
+
+
+
 //=====================================================================================================
 //
 //  POST route to add a doctor to the database. **Only** doctor information  should be in req.body, 

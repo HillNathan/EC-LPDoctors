@@ -2,20 +2,31 @@
   "name": "ec-lpdoctors",
   "version": "1.0.0",
   "description": "",
-  "main": "inde.html",
+  "main": "server.js",
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "bcryptjs": "^2.4.3",
+    "concurrently": "^5.1.0",
+    "dot-env": "^0.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-winston": "^4.0.5",
+    "if-env": "^1.0.4",
     "mongojs": "^3.1.0",
     "mongoose": "^5.10.0",
+    "nice-try": "^2.0.1",
     "winston": "^3.3.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
